@@ -6,7 +6,7 @@
 #
 
 LOCAL_PATH := device/xiaomi/fleur
-
+PRODUCT_SHIPPING_API_LEVEL := 30
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -42,9 +42,6 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 31
 
-# API
-PRODUCT_SHIPPING_API_LEVEL := 30
-
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -54,10 +51,10 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Gatekeeper
-PRODUCT_PACKAGES += \
-	android.hardware.gatekeeper@1.0-service
+#PRODUCT_PACKAGES += \
+#	android.hardware.gatekeeper@1.0-service
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
 	$(OUT_DIR)/target/product/fleur/vendor/bin/hw/android.hardware.gatekeeper@1.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.gatekeeper@1.0-service
 
 # Additional Libraries

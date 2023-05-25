@@ -125,6 +125,7 @@ TW_INCLUDE_FASTBOOTD := true
 
 # Device
 PB_TORCH_PATH := /sys/class/leds/flashlight
+#PB_TORCH_PATH := /sys/class/leds/torch-light0
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 700
 TW_FRAMERATE := 90
